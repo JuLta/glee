@@ -1,2 +1,12 @@
 body {
+  font-size: 16px;
+  line-height: 30px;
+  color: $default;
+  @extend %rubik-500;
+}
+
+.container {
+  max-width: 1800px;
+  margin: 0 auto;
+  padding: 0 15px;
 }

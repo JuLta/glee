@@ -3,6 +3,113 @@
 @import 'reset';
 @import 'global';
 
+.header {
+  padding-top: 45px;
+  &__inner{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+
+.logo {
+  &__img {
+    position: relative;
+    padding-left: 65px;
+    color: #436372;
+    font-size: 36px;
+    line-height: 58px;
+  }
+  &__img::before {
+    content: "";
+    position: absolute;
+    background-image: url('../images/logo.png');
+    background-repeat: no-repeat;
+    width: 55px;
+    height: 40px;
+    top: 9px;
+    left: 0;
+  }
+}
+
+.menu {
+  &__list {
+    display: flex;
+  }
+  &__list-item + .menu__list-item {
+    margin-left: 30px;
+  }
+  &__list-link {
+    font-size: 15px;
+    line-height: 12px;
+    color: $accent;
+    transition: all 0.4s;
+    &:hover {
+      border-bottom: 1px solid #436372;
+    }
+  }
+}
+
+.user-nav {
+  display: flex;
+  &__link {
+    position: relative;
+  }
+  &__link-seach {
+    padding: 20px;
+    border-radius: 50%;
+    background-color: #edf1f4;
+  }
+  &__link-heart {
+    padding: 20px 30px 13px 30px;
+    margin-left: 16px;
+    border-radius: 50px 0 0 50px;
+    background-color: #fcd7b6;
+    position: relative;
+    
+    &::before {
+      content:"";
+      position: absolute;
+      height: 32px;
+      border-right: 1px solid #fde7d3;
+      top: 11px;
+      right: 0;
+    }
+  }
+  &__link-cart {
+    padding: 20px 30px 13px 30px;
+    margin-right: 16px;
+    border-radius: 0 50px 50px 0;
+    background-color: #fcd7b6;
+    
+  }
+  &__link-list {
+    padding: 17px;
+    border-radius: 50%;
+    background-color: #a3bbc8;
+  }
+  &__num {
+    @extend %dmsans-400;
+    position: absolute;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background-color: #fff;
+    top: 12px;
+    right: 20px;
+    font-size: 10px;
+    color: $default;
+    text-align: center;
+    line-height: 15px;
+  }
+}
+
+
+
+
+
+
+
 
 
 @import 'media';
