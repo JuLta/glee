@@ -1,9 +1,10 @@
+@import url(/Users/julia/Desktop/from0to1/glee/node_modules/@fancyapps/fancybox/dist/jquery.fancybox.css);
 .user-nav__num, .footer-top__form-input, .footer-top__form-btn, .features__item-text {
   font-family: 'DMSans-Regular', sans-serif;
   font-weight: 400;
 }
 
-.footer-top__title, .features__item-title, .products__title, .products__btn, .products__content-item__title, .more__item-title {
+.footer-top__title, .features__item-title, .products__title, .products__btn, .products__content-item__title, .more__item-title, .design__btn, .content__items {
   font-family: 'DMSans-Bold', sans-serif;
   font-weight: 700;
 }
@@ -515,7 +516,6 @@ body {
 }
 
 .slider-top {
-  background-image: url("../images/bg.png");
   background-repeat: no-repeat;
   background-size: cover;
   padding-top: 210px;
@@ -874,5 +874,71 @@ body {
   height: 9px;
   top: 25px;
   right: 15px;
+}
+
+.design {
+  padding-top: 90px;
+}
+
+.design__btn {
+  margin: 0 14px 35px;
+  color: #8b8b8b;
+  cursor: pointer;
+}
+
+.design__btn:hover {
+  color: #191919;
+}
+
+.design .mixitup-control-active {
+  color: #191919;
+}
+
+.design__video {
+  background-color: #e6e6e6;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  height: 504px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.content__items {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[3];
+      grid-template-columns: repeat(3, 1fr);
+  grid-column-gap: 30px;
+  grid-row-gap: 34px;
+  margin-bottom: 120px;
+}
+
+.content__item-link {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  height: 250px;
+}
+
+.content__item {
+  padding: 34px;
+}
+
+.content__item-title {
+  width: 175px;
+  font-size: 20px;
+  color: #191919;
+}
+
+.content__item-subtitle {
+  color: #a3bbc8;
 }
 /*# sourceMappingURL=style.css.map */
