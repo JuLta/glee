@@ -752,7 +752,27 @@
   }
 }
 
-
+.page-404 {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: top center;
+  height: 100vh;
+  &__inner {
+    padding: 200px 0 0 100px;
+    max-width: 602px;
+    width: 100%;
+  }
+  &__title {
+    color: $top-title;
+    font-size: 42px;
+    margin-bottom: 22px;
+  }
+  &__text {
+    margin-bottom: 45px;
+    font-size: 18px;
+    @extend %rubik-400
+  }
+}
 
 
 
