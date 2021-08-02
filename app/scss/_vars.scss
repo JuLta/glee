@@ -5,6 +5,13 @@ $title: #191919;
 $footer:#7b7b7b;
 $bg: #fef7f0;
 $info: #a3bbc8;
+$top-title: #222933;
+$login: #436372;
+
+%dmsans-300 {
+  font-family: 'DMSans-Light', sans-serif;
+  font-weight: 300;
+}
 
 %dmsans-400 {
   font-family: 'DMSans-Regular', sans-serif;
@@ -19,6 +26,11 @@ $info: #a3bbc8;
 %dmsans-700 {
   font-family: 'DMSans-Bold', sans-serif;
   font-weight: 700;
+}
+
+%rubik-300 {
+  font-family: 'Rubik-Light', sans-serif;
+  font-weight: 300;
 }
 
 %rubik-400 {
