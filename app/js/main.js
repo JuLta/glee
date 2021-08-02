@@ -9,7 +9,7 @@ $ (function(){
 
   
   var mixer = mixitup('.products__content');
-  var mixer2 = mixitup('.content');
+  var mixer = mixitup('.content');
   
 });
 
