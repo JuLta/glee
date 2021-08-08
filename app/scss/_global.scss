@@ -60,3 +60,38 @@ body {
     line-height: 24px;
   }
 }
+.pagination {
+    display: flex;
+    justify-content: center;
+    &__inner {    
+      padding-top: 90px;
+      display: -webkit-inline-box;
+      a, span{
+      padding: 16px 20px;
+      @extend %rubik-400;
+      color: $default;
+      border: 1px solid $info;
+      background-color: transparent;
+      transition: all .4s;
+      cursor: pointer;
+      &:hover {
+        background-color: $info;
+        color: #fff;
+      }
+    }
+  }
+   &__list {
+     display: flex;
+   }
+   &__item + .pagination__item {
+     margin-left: 16px;
+   }
+   .pagination__link--active {
+     background-color: $info;
+     color: #fff;
+     cursor: default;
+   }
+   &__next {
+     margin-left: 16px;
+   }
+  }

@@ -7,6 +7,7 @@ $bg: #fef7f0;
 $info: #a3bbc8;
 $top-title: #222933;
 $login: #436372;
+$bg-page: #edf1f4;
 
 %dmsans-300 {
   font-family: 'DMSans-Light', sans-serif;
@@ -41,6 +42,14 @@ $login: #436372;
 %rubik-500 {
   font-family: 'Rubik-Medium', sans-serif;
   font-weight: 500;
+}
+
+%checkbox-hidden {
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  position: absolute;
 }
 
  @function max($numbers...){
