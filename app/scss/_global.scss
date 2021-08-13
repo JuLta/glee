@@ -95,3 +95,16 @@ body {
      margin-left: 16px;
    }
   }
+
+  .btn {
+    @extend %rubik-400;
+    border: none;
+    padding: 11px 55px;
+    font-size: 15px;
+    line-height: 30px;
+    background-color: $info;
+    color: #fff;
+    text-transform: uppercase;
+    border-radius: 5px;
+    cursor: pointer;
+  }

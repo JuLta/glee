@@ -1,4 +1,23 @@
 $ (function(){
+  $('.detalis-slider__inner').slick({
+    slidesToShow: 4,
+    slidesToScroll: 4,
+  }); 
+
+  $('.detalis-slide__thumb').slick({
+    asNavFor: '.detalis-slide__big',
+    focusOnSelect: true,
+    slidesToShow: 3,
+    slidesToScroll: 1,
+    vertical: true,
+    draggable: false,
+  });
+  $('.detalis-slide__big').slick({
+    asNavFor: '.detalis-slide__thumb',
+    draggable: false,
+    arrows: false,
+    fade: true,
+  });
 
   $(".star").rateYo({
     starWidth: "12px",
@@ -8,7 +27,7 @@ $ (function(){
     spacing: "6px",
   });
 
-  $(".shop-content__star").rateYo({
+  $(".shop-content__star, .detalis-item__star").rateYo({
     starWidth: "20px",
     readOnly: true,
     normalFill: "#d6d6d6",
@@ -16,7 +35,7 @@ $ (function(){
     spacing: "12px",
   });
   
-
+  
   $('.filter-price__input').ionRangeSlider({
     type: "double",
     prefix: "$",
@@ -38,7 +57,10 @@ $ (function(){
     autoplaySpeed: 2000
   });
 
+  $('.detalis-item__form-num').styler();
   
+
+
   var containerEL1 = document.querySelector('[data-ref="products-1"]');
   var containerEL2 = document.querySelector('[data-ref="design-1"]');
 
