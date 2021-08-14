@@ -1,4 +1,14 @@
 $ (function(){
+
+  $('.review-tabs__top-item').on('click', function(e) {
+    e.preventDefault();
+    $('.review-tabs__top-item').removeClass('review-tabs__top-item--active');
+    $(this).addClass('review-tabs__top-item--active');
+
+    $('.review-tabs__content-item').removeClass('review-tabs__content-item--active');
+    $($(this).attr('href')).addClass('review-tabs__content-item--active');
+  });
+
   $('.detalis-slider__inner').slick({
     slidesToShow: 4,
     slidesToScroll: 4,

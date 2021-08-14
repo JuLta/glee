@@ -164,36 +164,269 @@
           </div>
         </div>
 
-        <div class="review">
-          <div class="review__inner">
-            <a class="review__btn review__btn--active" href="#">
+        <div class="review-tabs">
+          <div class="review-tabs__top">
+            <a class="review-tabs__top-item review-tabs__top-item--active" href="#tab-1">
               Description
             </a>
-            <a class="review__btn" href="#">
+            <a class="review-tabs__top-item" href="#tab-2">
               Additional information
             </a>
-            <a class="review__btn" href="#">
+            <a class="review-tabs__top-item" href="#tab-3">
               Reviews (2)
             </a>
           </div>
-          <p class="review__text">
-            consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
-            minim
-            veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo Lorem ipsum dolor sit amet,
-            consectetur
-            adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
-            veniam, quis
-            nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-          </p>
+          <div class="review-tabs__content">
+            <div class="review-tabs__content-item review-tabs__content-item--active" id="tab-1">
+              <p class="review-tabs__content-text">
+                consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
+                ad
+                minim
+                veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo Lorem ipsum dolor sit
+                amet,
+                consectetur
+                adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
+                veniam, quis
+                nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+              </p>
+            </div>
+            <div class="review-tabs__content-item" id="tab-2">
+              Content 2
+            </div>
+            <div class="review-tabs__content-item" id="tab-3">
+              <div class="comments">
+                <img class="comments__img" src="images/avatar/1.jpg" alt="">
+                <div class="comments__content">
+                  <div class="comments__content-top">
+                    <p class="comments__content-name">
+                      Michle Jhon
+                    </p>
+                    <p class="comments__content-date">
+                      2 days ago
+                    </p>
+                    <div class="star comments__content-star" data-rateyo-rating="4"></div>
+                  </div>
+                  <p class="comments__content-text">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
+                    et dolore magna
+                    aliqua. Qus ipsum speissei ultrices gravida. Risus commodo viverra maeenas accumsan lacus vel
+                    facilisis.
+                  </p>
+                  <a class="comments__content-reply" href="#">
+                    Reply
+                  </a>
+                </div>
+              </div>
+
+              <div class="comments">
+                <img class="comments__img" src="images/avatar/2.jpg" alt="">
+                <div class="comments__content">
+                  <div class="comments__content-top">
+                    <p class="comments__content-name">
+                      Michle Jhon
+                    </p>
+                    <p class="comments__content-date">
+                      2 days ago
+                    </p>
+                    <div class="star comments__content-star" data-rateyo-rating="4"></div>
+                  </div>
+                  <p class="comments__content-text">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
+                    et dolore
+                    magna
+                    aliqua. Qus ipsum speissei ultrices gravida. Risus commodo viverra maeenas accumsan lacus vel
+                    facilisis.
+                  </p>
+                  <a class="comments__content-reply" href="#">
+                    Reply
+                  </a>
+                </div>
+              </div>
+
+              <div class="comments">
+                <img class="comments__img" src="images/avatar/3.jpg" alt="">
+                <div class="comments__content">
+                  <div class="comments__content-top">
+                    <p class="comments__content-name">
+                      Michle Jhon
+                    </p>
+                    <p class="comments__content-date">
+                      2 days ago
+                    </p>
+                    <div class="star comments__content-star" data-rateyo-rating="4"></div>
+                  </div>
+                  <p class="comments__content-text">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
+                    et dolore
+                    magna
+                    aliqua. Qus ipsum speissei ultrices gravida. Risus commodo viverra maeenas accumsan lacus vel
+                    facilisis.
+                  </p>
+                  <a class="comments__content-reply" href="#">
+                    Reply
+                  </a>
+                </div>
+              </div>
+
+              <form class="comments-form" action="#">
+                <p class="comments-form__title">
+                  Add your review
+                </p>
+                <div class="comments-form__rating">
+                  <span class="comments-form__rating-title">Your Rating</span>
+                  <label class="comments-form__label">
+                    <input class="comments-form__input" type="radio" name="star">
+                    <span class="comments-form__radio">
+                      <?xml version="1.0" encoding="UTF-8"?>
+                      <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="18pt"
+                        height="16pt" viewBox="0 0 18 16" version="1.1">
+                        <g id="surface1">
+                          <path
+                            d="M 8.101562 0.554688 L 6.0625 4.695312 L 1.496094 5.359375 C 0.679688 5.476562 0.351562 6.488281 0.945312 7.066406 L 4.246094 10.285156 L 3.464844 14.832031 C 3.324219 15.652344 4.191406 16.269531 4.914062 15.882812 L 9 13.738281 L 13.085938 15.882812 C 13.808594 16.265625 14.675781 15.652344 14.535156 14.832031 L 13.753906 10.285156 L 17.054688 7.066406 C 17.648438 6.488281 17.320312 5.476562 16.503906 5.359375 L 11.9375 4.695312 L 9.898438 0.554688 C 9.53125 -0.179688 8.472656 -0.191406 8.101562 0.554688 Z M 8.101562 0.554688 " />
+                        </g>
+                      </svg>
+                    </span>
+                  </label>
+                  <label class="comments-form__label">
+                    <input class="comments-form__input" type="radio" name="star">
+                    <span class="comments-form__radio">
+                      <?xml version="1.0" encoding="UTF-8"?>
+                      <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="18pt" height="16pt"
+                        viewBox="0 0 18 16" version="1.1">
+                        <g id="surface1">
+                          <path
+                            d="M 8.101562 0.554688 L 6.0625 4.695312 L 1.496094 5.359375 C 0.679688 5.476562 0.351562 6.488281 0.945312 7.066406 L 4.246094 10.285156 L 3.464844 14.832031 C 3.324219 15.652344 4.191406 16.269531 4.914062 15.882812 L 9 13.738281 L 13.085938 15.882812 C 13.808594 16.265625 14.675781 15.652344 14.535156 14.832031 L 13.753906 10.285156 L 17.054688 7.066406 C 17.648438 6.488281 17.320312 5.476562 16.503906 5.359375 L 11.9375 4.695312 L 9.898438 0.554688 C 9.53125 -0.179688 8.472656 -0.191406 8.101562 0.554688 Z M 8.101562 0.554688 " />
+                        </g>
+                      </svg><?xml version="1.0" encoding="UTF-8"?>
+                      <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="18pt" height="16pt"
+                        viewBox="0 0 18 16" version="1.1">
+                        <g id="surface1">
+                          <path
+                            d="M 8.101562 0.554688 L 6.0625 4.695312 L 1.496094 5.359375 C 0.679688 5.476562 0.351562 6.488281 0.945312 7.066406 L 4.246094 10.285156 L 3.464844 14.832031 C 3.324219 15.652344 4.191406 16.269531 4.914062 15.882812 L 9 13.738281 L 13.085938 15.882812 C 13.808594 16.265625 14.675781 15.652344 14.535156 14.832031 L 13.753906 10.285156 L 17.054688 7.066406 C 17.648438 6.488281 17.320312 5.476562 16.503906 5.359375 L 11.9375 4.695312 L 9.898438 0.554688 C 9.53125 -0.179688 8.472656 -0.191406 8.101562 0.554688 Z M 8.101562 0.554688 " />
+                        </g>
+                      </svg>
+                    </span>
+                  </label>
+                  <label class="comments-form__label">
+                    <input class="comments-form__input" type="radio" name="star">
+                    <span class="comments-form__radio">
+                      <?xml version="1.0" encoding="UTF-8"?>
+                      <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="18pt"
+                        height="16pt" viewBox="0 0 18 16" version="1.1">
+                        <g id="surface1">
+                          <path 
+                            d="M 8.101562 0.554688 L 6.0625 4.695312 L 1.496094 5.359375 C 0.679688 5.476562 0.351562 6.488281 0.945312 7.066406 L 4.246094 10.285156 L 3.464844 14.832031 C 3.324219 15.652344 4.191406 16.269531 4.914062 15.882812 L 9 13.738281 L 13.085938 15.882812 C 13.808594 16.265625 14.675781 15.652344 14.535156 14.832031 L 13.753906 10.285156 L 17.054688 7.066406 C 17.648438 6.488281 17.320312 5.476562 16.503906 5.359375 L 11.9375 4.695312 L 9.898438 0.554688 C 9.53125 -0.179688 8.472656 -0.191406 8.101562 0.554688 Z M 8.101562 0.554688 " />
+                        </g>
+                      </svg><?xml version="1.0" encoding="UTF-8"?>
+                      <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="18pt"
+                        height="16pt" viewBox="0 0 18 16" version="1.1">
+                        <g id="surface1">
+                          <path 
+                            d="M 8.101562 0.554688 L 6.0625 4.695312 L 1.496094 5.359375 C 0.679688 5.476562 0.351562 6.488281 0.945312 7.066406 L 4.246094 10.285156 L 3.464844 14.832031 C 3.324219 15.652344 4.191406 16.269531 4.914062 15.882812 L 9 13.738281 L 13.085938 15.882812 C 13.808594 16.265625 14.675781 15.652344 14.535156 14.832031 L 13.753906 10.285156 L 17.054688 7.066406 C 17.648438 6.488281 17.320312 5.476562 16.503906 5.359375 L 11.9375 4.695312 L 9.898438 0.554688 C 9.53125 -0.179688 8.472656 -0.191406 8.101562 0.554688 Z M 8.101562 0.554688 " />
+                        </g>
+                      </svg><?xml version="1.0" encoding="UTF-8"?>
+                      <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="18pt" height="16pt"
+                        viewBox="0 0 18 16" version="1.1">
+                        <g id="surface1">
+                          <path
+                            d="M 8.101562 0.554688 L 6.0625 4.695312 L 1.496094 5.359375 C 0.679688 5.476562 0.351562 6.488281 0.945312 7.066406 L 4.246094 10.285156 L 3.464844 14.832031 C 3.324219 15.652344 4.191406 16.269531 4.914062 15.882812 L 9 13.738281 L 13.085938 15.882812 C 13.808594 16.265625 14.675781 15.652344 14.535156 14.832031 L 13.753906 10.285156 L 17.054688 7.066406 C 17.648438 6.488281 17.320312 5.476562 16.503906 5.359375 L 11.9375 4.695312 L 9.898438 0.554688 C 9.53125 -0.179688 8.472656 -0.191406 8.101562 0.554688 Z M 8.101562 0.554688 " />
+                        </g>
+                      </svg>
+                    </span>
+                  </label>
+                  <label class="comments-form__label">
+                    <input class="comments-form__input" type="radio" name="star">
+                    <span class="comments-form__radio">
+                      <?xml version="1.0" encoding="UTF-8"?>
+                      <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="18pt" height="16pt"
+                        viewBox="0 0 18 16" version="1.1">
+                        <g id="surface1">
+                          <path 
+                            d="M 8.101562 0.554688 L 6.0625 4.695312 L 1.496094 5.359375 C 0.679688 5.476562 0.351562 6.488281 0.945312 7.066406 L 4.246094 10.285156 L 3.464844 14.832031 C 3.324219 15.652344 4.191406 16.269531 4.914062 15.882812 L 9 13.738281 L 13.085938 15.882812 C 13.808594 16.265625 14.675781 15.652344 14.535156 14.832031 L 13.753906 10.285156 L 17.054688 7.066406 C 17.648438 6.488281 17.320312 5.476562 16.503906 5.359375 L 11.9375 4.695312 L 9.898438 0.554688 C 9.53125 -0.179688 8.472656 -0.191406 8.101562 0.554688 Z M 8.101562 0.554688 " />
+                        </g>
+                      </svg><?xml version="1.0" encoding="UTF-8"?>
+                      <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="18pt" height="16pt"
+                        viewBox="0 0 18 16" version="1.1">
+                        <g id="surface1">
+                          <path
+                            d="M 8.101562 0.554688 L 6.0625 4.695312 L 1.496094 5.359375 C 0.679688 5.476562 0.351562 6.488281 0.945312 7.066406 L 4.246094 10.285156 L 3.464844 14.832031 C 3.324219 15.652344 4.191406 16.269531 4.914062 15.882812 L 9 13.738281 L 13.085938 15.882812 C 13.808594 16.265625 14.675781 15.652344 14.535156 14.832031 L 13.753906 10.285156 L 17.054688 7.066406 C 17.648438 6.488281 17.320312 5.476562 16.503906 5.359375 L 11.9375 4.695312 L 9.898438 0.554688 C 9.53125 -0.179688 8.472656 -0.191406 8.101562 0.554688 Z M 8.101562 0.554688 " />
+                        </g>
+                      </svg><?xml version="1.0" encoding="UTF-8"?>
+                      <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="18pt" height="16pt"
+                        viewBox="0 0 18 16" version="1.1">
+                        <g id="surface1">
+                          <path 
+                            d="M 8.101562 0.554688 L 6.0625 4.695312 L 1.496094 5.359375 C 0.679688 5.476562 0.351562 6.488281 0.945312 7.066406 L 4.246094 10.285156 L 3.464844 14.832031 C 3.324219 15.652344 4.191406 16.269531 4.914062 15.882812 L 9 13.738281 L 13.085938 15.882812 C 13.808594 16.265625 14.675781 15.652344 14.535156 14.832031 L 13.753906 10.285156 L 17.054688 7.066406 C 17.648438 6.488281 17.320312 5.476562 16.503906 5.359375 L 11.9375 4.695312 L 9.898438 0.554688 C 9.53125 -0.179688 8.472656 -0.191406 8.101562 0.554688 Z M 8.101562 0.554688 " />
+                        </g>
+                      </svg><?xml version="1.0" encoding="UTF-8"?>
+                      <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="18pt" height="16pt"
+                        viewBox="0 0 18 16" version="1.1">
+                        <g id="surface1">
+                          <path 
+                            d="M 8.101562 0.554688 L 6.0625 4.695312 L 1.496094 5.359375 C 0.679688 5.476562 0.351562 6.488281 0.945312 7.066406 L 4.246094 10.285156 L 3.464844 14.832031 C 3.324219 15.652344 4.191406 16.269531 4.914062 15.882812 L 9 13.738281 L 13.085938 15.882812 C 13.808594 16.265625 14.675781 15.652344 14.535156 14.832031 L 13.753906 10.285156 L 17.054688 7.066406 C 17.648438 6.488281 17.320312 5.476562 16.503906 5.359375 L 11.9375 4.695312 L 9.898438 0.554688 C 9.53125 -0.179688 8.472656 -0.191406 8.101562 0.554688 Z M 8.101562 0.554688 " />
+                        </g>
+                      </svg>
+                    </span>
+                  </label>
+                  <label class="comments-form__label">
+                    <input class="comments-form__input" type="radio" name="star" checked>
+                    <span class="comments-form__radio">
+                      <?xml version="1.0" encoding="UTF-8"?>
+                      <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="18pt" height="16pt"
+                        viewBox="0 0 18 16" version="1.1">
+                        <g id="surface1">
+                          <path 
+                            d="M 8.101562 0.554688 L 6.0625 4.695312 L 1.496094 5.359375 C 0.679688 5.476562 0.351562 6.488281 0.945312 7.066406 L 4.246094 10.285156 L 3.464844 14.832031 C 3.324219 15.652344 4.191406 16.269531 4.914062 15.882812 L 9 13.738281 L 13.085938 15.882812 C 13.808594 16.265625 14.675781 15.652344 14.535156 14.832031 L 13.753906 10.285156 L 17.054688 7.066406 C 17.648438 6.488281 17.320312 5.476562 16.503906 5.359375 L 11.9375 4.695312 L 9.898438 0.554688 C 9.53125 -0.179688 8.472656 -0.191406 8.101562 0.554688 Z M 8.101562 0.554688 " />
+                        </g>
+                      </svg><?xml version="1.0" encoding="UTF-8"?>
+                      <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="18pt" height="16pt"
+                        viewBox="0 0 18 16" version="1.1">
+                        <g id="surface1">
+                          <path 
+                            d="M 8.101562 0.554688 L 6.0625 4.695312 L 1.496094 5.359375 C 0.679688 5.476562 0.351562 6.488281 0.945312 7.066406 L 4.246094 10.285156 L 3.464844 14.832031 C 3.324219 15.652344 4.191406 16.269531 4.914062 15.882812 L 9 13.738281 L 13.085938 15.882812 C 13.808594 16.265625 14.675781 15.652344 14.535156 14.832031 L 13.753906 10.285156 L 17.054688 7.066406 C 17.648438 6.488281 17.320312 5.476562 16.503906 5.359375 L 11.9375 4.695312 L 9.898438 0.554688 C 9.53125 -0.179688 8.472656 -0.191406 8.101562 0.554688 Z M 8.101562 0.554688 " />
+                        </g>
+                      </svg><?xml version="1.0" encoding="UTF-8"?>
+                      <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="18pt" height="16pt"
+                        viewBox="0 0 18 16" version="1.1">
+                        <g id="surface1">
+                          <path
+                            d="M 8.101562 0.554688 L 6.0625 4.695312 L 1.496094 5.359375 C 0.679688 5.476562 0.351562 6.488281 0.945312 7.066406 L 4.246094 10.285156 L 3.464844 14.832031 C 3.324219 15.652344 4.191406 16.269531 4.914062 15.882812 L 9 13.738281 L 13.085938 15.882812 C 13.808594 16.265625 14.675781 15.652344 14.535156 14.832031 L 13.753906 10.285156 L 17.054688 7.066406 C 17.648438 6.488281 17.320312 5.476562 16.503906 5.359375 L 11.9375 4.695312 L 9.898438 0.554688 C 9.53125 -0.179688 8.472656 -0.191406 8.101562 0.554688 Z M 8.101562 0.554688 " />
+                        </g>
+                      </svg><?xml version="1.0" encoding="UTF-8"?>
+                      <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="18pt" height="16pt"
+                        viewBox="0 0 18 16" version="1.1">
+                        <g id="surface1">
+                          <path
+                            d="M 8.101562 0.554688 L 6.0625 4.695312 L 1.496094 5.359375 C 0.679688 5.476562 0.351562 6.488281 0.945312 7.066406 L 4.246094 10.285156 L 3.464844 14.832031 C 3.324219 15.652344 4.191406 16.269531 4.914062 15.882812 L 9 13.738281 L 13.085938 15.882812 C 13.808594 16.265625 14.675781 15.652344 14.535156 14.832031 L 13.753906 10.285156 L 17.054688 7.066406 C 17.648438 6.488281 17.320312 5.476562 16.503906 5.359375 L 11.9375 4.695312 L 9.898438 0.554688 C 9.53125 -0.179688 8.472656 -0.191406 8.101562 0.554688 Z M 8.101562 0.554688 " />
+                        </g>
+                      </svg><?xml version="1.0" encoding="UTF-8"?>
+                      <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="18pt" height="16pt"
+                        viewBox="0 0 18 16" version="1.1">
+                        <g id="surface1">
+                          <path
+                            d="M 8.101562 0.554688 L 6.0625 4.695312 L 1.496094 5.359375 C 0.679688 5.476562 0.351562 6.488281 0.945312 7.066406 L 4.246094 10.285156 L 3.464844 14.832031 C 3.324219 15.652344 4.191406 16.269531 4.914062 15.882812 L 9 13.738281 L 13.085938 15.882812 C 13.808594 16.265625 14.675781 15.652344 14.535156 14.832031 L 13.753906 10.285156 L 17.054688 7.066406 C 17.648438 6.488281 17.320312 5.476562 16.503906 5.359375 L 11.9375 4.695312 L 9.898438 0.554688 C 9.53125 -0.179688 8.472656 -0.191406 8.101562 0.554688 Z M 8.101562 0.554688 " />
+                        </g>
+                      </svg>
+                    </span>
+                  </label>
+                </div>
+                <div class="comments-form__box-input">
+                  <input class="comments-form__text-input" placeholder="Your name" type="text">
+                  <input class="comments-form__text-input" placeholder="E-mail adress" type="text">
+                </div>
+                <textarea class="comments-form__textarea" placeholder="Your text here"></textarea>
+                <button class="comments-form__btn btn" type="submit">
+                  Leave Review
+                </button>
+              </form>
+            </div>
+          </div>
         </div>
 
         <div class="detalis-slider">
-
           <h4 class="detalis-slider__title">
             Related products
           </h4>
-
-
           <div class="detalis-slider__inner">
             <div class="products__content-item">
               <div class="products__content-item__imginner">
@@ -355,7 +588,7 @@
               </span>
             </div>
 
-           <div class="products__content-item">
+            <div class="products__content-item">
               <div class="products__content-item__imginner">
                 <img class="products__content-img" src="images/products-catalog/product2.png" alt="products photo">
               </div>
@@ -450,7 +683,6 @@
                 $29.00
               </span>
             </div>
-
 
           </div>
         </div>
