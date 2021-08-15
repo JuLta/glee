@@ -12,6 +12,7 @@ $ (function(){
   $('.detalis-slider__inner').slick({
     slidesToShow: 4,
     slidesToScroll: 4,
+    infinite: false,
   }); 
 
   $('.detalis-slide__thumb').slick({

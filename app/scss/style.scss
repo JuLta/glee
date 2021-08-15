@@ -665,16 +665,17 @@
       border-bottom: 1px solid #e0e0e0;
       margin-bottom: 10px;
     }
-    &__text {
-      font-size: 12px;
-      line-height: 30px;
-      padding-left: 3px;
-      @extend %dmsans-400;
-      color: #222933;
-      text-transform: uppercase;
-    }
     &__text + .news-top__text {
       margin-left: 26px;
+    }
+    &__text-link,
+     &__text {
+      padding-left: 3px;
+      font-size: 12px;
+      line-height: 30px;
+      @extend %dmsans-400;
+      color: #222933;
+      text-transform: uppercase; 
     }
   }
   .partners {
@@ -1345,30 +1346,30 @@
     text-align: center;
   }
 
-  .slick-prev.slick-arrow,
-  .slick-next.slick-arrow {
+  .slick-prev,
+  .slick-next {
     position: absolute;
     top: -103px;
     width: 46px;
     height: 46px;
     font-size: 0;
-    border: 1px solid $bg-page;
+    border: 1px solid $info;
     border-radius: 5px;
     background-color: transparent;
     cursor: pointer;
     background-repeat: no-repeat;
     background-position: center center;
-    &:hover {
-      border: 1px solid $info;
-    }
   }
-  .slick-prev.slick-arrow {
+  .slick-prev {
     right: 70px;
     background-image: url("../images/icons/p-left.svg");
   }
-  .slick-next.slick-arrow {
+  .slick-next{
     right: 0;
     background-image: url("../images/icons/p.svg");
+  }
+  .slick-disabled {
+    border: 1px solid $bg-page;
   }
   .slick-slide {
     float: left;
@@ -1379,9 +1380,192 @@
     max-width: 270px;
     margin-top: 36px;
   }
-  .slick-list.draggable {
+}
+
+.blog {
+  padding-top: 120px;
+
+  &__inner {
+    display: flex;
+    justify-content: space-between;
+  }
+  &__content {
+    width: 833px;
+    margin-right: 65px;
+  }
+  &__content-item {
+  margin-bottom: 53px;
+  position: relative;
+   @extend %rubik-400;
+  }
+  &__content-link {
     display: block;
+  }
+  &__content-item__img {
+    margin-bottom: 38px;
+    min-width: 833px;
+    object-fit: cover;
+    display: block;
+  }
+  &__content-info__box {
+    display: flex;
+    align-items: center;
+    width: 275px;
+    height: 70px;
+    text-transform: uppercase;
+    color: #fff;
+    background-color: $info;
+    position: absolute;
+    top: 431px;
+    font-size: 12px;
+  }
+  &__content-info__date,
+  &__content-info__user {
+    margin-left: 21px;
+    padding-left: 22px;
+    position: relative;
+    &::before {
+      content: "";
+      position: absolute;
+      width: 14px;
+      height: 14px;
+      left: 0;
+      top: 8px;
+      background-size: contain;
+      background-repeat: no-repeat;
+    }
+  }
+  &__content-info__date {
+    &::before {
+      background-image: url('../images/icons/calendar.svg');
+    }
+  }
+  &__content-info__user {
+    color: #fff;
+    &::before {
+      background-image: url('../images/icons/user.svg');
+    }
+  }
+  &__content-title {
+    @extend %rubik-400;
+    font-size: 36px;
+    line-height: 26px;
+    color: #333333;
+    margin-bottom: 35px;
+  }
+  &__content-text {
+    margin-bottom: 38px;
+  }
+  &__content-link__btn {
+    font-size: 15px;
+    line-height: 12px;
+    @extend %rubik-400;
+    color: $info;
+    padding: 20px 90px 20px 19px;
+    border: 1px solid $info;
+    display: inline-block;
+    position: relative;
+    &::after {
+      content: "";
+      position: absolute;
+      width: 24px;
+      height: 10px;
+      right: 18px;
+      background-image: url('../images/icons/arrow-viewmore.svg');
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+  }
+  &__aside {
+    width: 270px;
+  }
+}
+.filter-blog {
+  &__form-search {
+    margin-bottom: 50px;
+    display: flex;
+  }
+  &__input-search {
+    width: 228px;
+    height: 40px;
+    border: 1px solid $bg-page;
+    border-radius: 5px;
+    padding: 0 15px 0 15px;
+  }
+  &__btn-search {
+    border: none;
+    width: 49px;
+    height: 40px;
+    background-color: $bg-page;
+    border-radius: 5px;
+    display: inline-block;
+    margin-left: -7px;
+    cursor: pointer;
+    position: relative;
+    &::before {
+      content: "";
+      position: absolute;
+      width: 17px;
+      height: 17px;
+      left: 15px;
+      top: 13px;
+      background-image: url('../images/icons/search.svg');
+      background-repeat: no-repeat;
+    }
   }
 }
 
+.recent-posts {
+  margin-bottom: 22px;
+  display: flex;
+  justify-content: space-between;
+  &__link-img {
+    display: block;
+    width: 71px;
+    margin-right: 18px;
+  }
+  &__img {
+    min-width: 71px;
+    height: 71px;
+    object-fit: cover;
+  }
+  &__title {
+    color: #333333;
+    font-size: 14px;
+    line-height: 20px;
+    @extend %rubik-400;
+  }
+  &__date {
+    color: #9a9a9a;
+    font-size: 12px;
+    text-transform: uppercase;
+    @extend %rubik-400;
+    padding-left: 20px;
+    position: relative;
+    &::before {
+      content: "";
+      position: absolute;
+      width: 13px;
+      height: 14px;
+      left: 0;
+      top: 7px;
+      background-image: url('../images/icons/calendar2.svg');
+      path {
+        fill: #9a9a9a;
+      }
+    }
+  }
+}
+
+.pagination3 {
+  .pagination__inner {
+    padding: 23px 0 120px;
+  }
+  .pagination__link--active {
+     background-color: $info;
+     color: #fff;
+     cursor: default;
+  }
+}
 @import "media";
+
