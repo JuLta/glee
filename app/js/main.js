@@ -84,6 +84,8 @@ $ (function(){
   };
   var mixer1 = mixitup(containerEL1, config);
   var mixer2 = mixitup(containerEL2, config);
+
+  
   
 });
 

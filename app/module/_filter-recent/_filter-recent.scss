@@ -1,0 +1,27 @@
+.filter-recent {
+  @extend %rubik-400;
+  &__inner {
+    display: flex;
+    align-items: center;
+    margin-bottom: 22px;
+    height: 70px;
+  }
+  &__item-content {
+    margin-left: 15px;
+  }
+  &__item-title {
+    font-size: 14px;
+    line-height: 16px;
+    color: #333333;
+  }
+  &__price {
+    display: block;
+    font-size: 15px;
+    margin-top: 4px;
+    color: #333333;
+  }
+}
+
+.star {
+  padding: 0;
+}

@@ -5,64 +5,63 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>start html</title>
-  <link rel="stylesheet" href="css/style.min.css">
+  <link rel="stylesheet" href="css/detalis-product.min.css">
 </head>
 
 <body>
   <header class="header">
-    <div class="container">
-      <div class="header__inner">
-        <a class="logo" href="#">
-          <div class="logo__img">Glee.</div>
+  <div class="container">
+    <div class="header__inner">
+      <a class="logo" href="#">
+        <div class="logo__img">Glee.</div>
+      </a>
+      <nav class="menu">
+        <ul class="menu__list">
+          <li class="menu__list-item">
+            <a class="menu__list-link" href="#">Home +</a>
+          </li>
+          <li class="menu__list-item">
+            <a class="menu__list-link" href="#">About</a>
+          </li>
+          <li class="menu__list-item">
+            <a class="menu__list-link" href="#">Servies</a>
+          </li>
+          <li class="menu__list-item">
+            <a class="menu__list-link" href="#">Pages +</a>
+          </li>
+          <li class="menu__list-item">
+            <a class="menu__list-link" href="#">News</a>
+          </li>
+          <li class="menu__list-item">
+            <a class="menu__list-link" href="#">Contact</a>
+          </li>
+        </ul>
+      </nav>
+      <div class="user-nav">
+        <a class="user-nav__link user-nav__link-seach" href="#">
+          <img class="user-nav__link-img" src="images/icons/search.svg" alt="search">
         </a>
-        <nav class="menu">
-          <ul class="menu__list">
-            <li class="menu__list-item">
-              <a class="menu__list-link" href="#">Home +</a>
-            </li>
-            <li class="menu__list-item">
-              <a class="menu__list-link" href="#">About</a>
-            </li>
-            <li class="menu__list-item">
-              <a class="menu__list-link" href="#">Servies</a>
-            </li>
-            <li class="menu__list-item">
-              <a class="menu__list-link" href="#">Pages +</a>
-            </li>
-            <li class="menu__list-item">
-              <a class="menu__list-link" href="#">News</a>
-            </li>
-            <li class="menu__list-item">
-              <a class="menu__list-link" href="#">Contact</a>
-            </li>
-          </ul>
-        </nav>
-        <div class="user-nav">
-          <a class="user-nav__link user-nav__link-seach" href="#">
-            <img class="user-nav__link-img" src="images/icons/search.svg" alt="search">
-          </a>
-          <a class="user-nav__link user-nav__link-heart" href="#">
-            <img class="user-nav__link-img" src="images/icons/heart.png" alt="heart">
-            <span class="user-nav__num">0</span>
-          </a>
-          <a class="user-nav__link user-nav__link-cart" href="#">
-            <img class="user-nav__link-img" src="images/icons/cart.svg" alt="cart">
-            <span class="user-nav__num">0</span>
-          </a>
-          <a class="user-nav__link user-nav__link-list" href="#">
-            <img class="user-nav__link-img" src="images/icons/list.svg" alt="list">
-          </a>
-        </div>
+        <a class="user-nav__link user-nav__link-heart" href="#">
+          <img class="user-nav__link-img" src="images/icons/heart.png" alt="heart">
+          <span class="user-nav__num">0</span>
+        </a>
+        <a class="user-nav__link user-nav__link-cart" href="#">
+          <img class="user-nav__link-img" src="images/icons/cart.svg" alt="cart">
+          <span class="user-nav__num">0</span>
+        </a>
+        <a class="user-nav__link user-nav__link-list" href="#">
+          <img class="user-nav__link-img" src="images/icons/list.svg" alt="list">
+        </a>
       </div>
     </div>
-  </header>
-
+  </div>
+</header>
+  
   <main class="main">
-
-    <section class="top" style="background-image: url(images/bg-top__pages.jpg);">
+     <section class="top" style="background-image: url(images/bg-top__pages.jpg);">
       <div class="content__container">
         <h2 class="top__title">
-          Product Detalis
+         Details Product
         </h2>
         <div class="breadcrubs">
           <ul class="breadcrubs__list">
@@ -73,15 +72,14 @@
             </li>
             <li class="breadcrubs__item">
               <a href="" class="breadcrubs__link">
-                Product detalis
+                Details Product
               </a>
             </li>
           </ul>
         </div>
       </div>
     </section>
-
-    <section class="detalis">
+      <section class="detalis">
       <div class="content__container">
         <div class="detalis-item">
           <div class="detalis-item__inner">
@@ -159,7 +157,6 @@
                   </li>
                 </ul>
               </div>
-
             </div>
           </div>
         </div>
@@ -176,6 +173,7 @@
               Reviews (2)
             </a>
           </div>
+
           <div class="review-tabs__content">
             <div class="review-tabs__content-item review-tabs__content-item--active" id="tab-1">
               <p class="review-tabs__content-text">
@@ -190,12 +188,12 @@
                 nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
               </p>
             </div>
+
             <div class="review-tabs__content-item" id="tab-2">
               Content 2
             </div>
             <div class="review-tabs__content-item" id="tab-3">
-
-              <div class="comments">
+             <div class="comments">
                 <img class="comments__img" src="images/avatar/1.jpg" alt="">
                 <div class="comments__content">
                   <div class="comments__content-top">
@@ -205,7 +203,8 @@
                     <p class="comments__content-date">
                       2 days ago
                     </p>
-                    <div class="star comments__content-star" data-rateyo-rating="4"></div>
+                    <div class="star comments__content-star" data-rateyo-rating="4">
+                    </div>
                   </div>
                   <p class="comments__content-text">
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
@@ -430,10 +429,17 @@
                   Leave Review
                 </button>
               </form>
-            </div>
+            
           </div>
-        </div>
+       
 
+            </div> 
+       </div>
+</div>
+           
+
+
+             
         <div class="detalis-slider">
           <h4 class="detalis-slider__title">
             Related products
@@ -694,21 +700,18 @@
                 $29.00
               </span>
             </div>
-
           </div>
         </div>
       </div>
-
+      
     </section>
-
-
     <section class="news" style="background-image: url('images/bg-news.jpg');">
       <div class="content__container">
         <div class="news-top">
-          <h4 class="new-top__title products__title">
+          <h4 class="news-top__title products__title">
             Our Insights & Articles
           </h4>
-          <a class="news-top__link-btn news-top__link-btn__def" href="#">
+          <a class="news-top__link-btn" href="#">
             View All
           </a>
         </div>
@@ -717,8 +720,8 @@
             <img class="news-top__items-img" src="images/design-catalog/news1.jpg" alt="new design photo">
             <div class="news-top__link-box">
               <a href="#" class="news-top__box-btn">
-                NEWS
-              </a>
+              NEWS
+            </a>
             </div>
             <div class="news-top__block-text">
               <h6 class="news-top__block-title">
@@ -728,9 +731,9 @@
                  28 JANUARY, 2020
               </span>
               <span class="news-top__text">
-                <a class="news-top__text-link" href="#">
-                   BY ADMIN
-                </a>
+              <a class="news-top__text-link" href="#">
+                 BY ADMIN
+              </a>
               </span>
             </div>
           </div>
@@ -766,120 +769,126 @@
                 </a>
               </div>
             </div>
-            <div class="news-top__block-text">
-              <h6 class="news-top__block-title">
-                Rncididunt ut labore et dolore magna aliqua. Ut enim
-              </h6>
-              <span class="news-top__text">
-                 28 JANUARY, 2020
-              </span>
-              <span class="news-top__text">
-                <a class="news-top__text-link" href="#">
-                   BY ADMIN
-                </a>
-              </span>
+            <div class="news-top__text">
+              <div class="news-top__block-text">
+                <h6 class="news-top__block-title">
+                  Rncididunt ut labore et dolore magna aliqua. Ut enim
+                </h6>
+                <span class="news-top__text">
+                   28 JANUARY, 2020
+                </span>
+                <span class="news-top__text">
+                  <a class="news-top__text-link" href="#">
+                      BY ADMIN
+                  </a>
+                </span>
+              </div>
             </div>
           </div>
         </div>
-        <div class="partners">
-          <div class="partners__inner">
-            <img src="images/partners-logo/logo-partner1.png" alt="logotip partners" class="new__partners">
-            <img src="images/partners-logo/logo-partner2.png" alt="logotip partners" class="new__partners">
-            <img src="images/partners-logo/logo-partner3.png" alt="logotip partners" class="new__partners">
-            <img src="images/partners-logo/logo-partner4.png" alt="logotip partners" class="new__partners">
-            <img src="images/partners-logo/logo-partner5.png" alt="logotip partners" class="new__partners">
-          </div>
+ 
+    <div class="partners">
+      <div class="content__container">
+        <div class="partners__inner">
+          <img src="images/partners-logo/logo-partner1.png" alt="logotip partners" class="new__partners">
+          <img src="images/partners-logo/logo-partner2.png" alt="logotip partners" class="new__partners">
+          <img src="images/partners-logo/logo-partner3.png" alt="logotip partners" class="new__partners">
+          <img src="images/partners-logo/logo-partner4.png" alt="logotip partners" class="new__partners">
+          <img src="images/partners-logo/logo-partner5.png" alt="logotip partners" class="new__partners">
         </div>
       </div>
-    </section>
+    </div>
+    
+</section>
+    
   </main>
+  
   <footer class="footer">
-    <div class="content__container">
-      <div class="footer-top">
-        <div class="footer-top__item footer-top__contact">
-          <a class="logo footer-top__logo" href="#">
-            <div class="logo__img">Glee.</div>
-          </a>
-          <a class="footer-top__adress" href="#">
-            ADDRESS: 4772 Wines Lane Houston, TX 77032
-          </a>
-          <a class="footer-top__phone" href="tel:+8323475843">
-            TELEPHONE: +832-347-5843
-          </a>
-          <a class="footer-top__email" href="mailto:contact@Glee.com">
-            EMAIL: contact@Glee.com
-          </a>
-        </div>
-        <div class="footer-top__item footer-top__nav">
-          <h6 class="footer-top__title">Services</h6>
-          <ul class="footer-top__list">
-            <li class="footer-top__item">
-              <a class="footer-top__link" href="#">About us</a>
-            </li>
-            <li class="footer-top__item">
-              <a class="footer-top__link" href="#">Return Policy</a>
-            </li>
-            <li class="footer-top__item">
-              <a class="footer-top__link" href="#">Our Blog</a>
-            </li>
-            <li class="footer-top__item">
-              <a class="footer-top__link" href="#">Contact Us</a>
-            </li>
-            <li class="footer-top__item">
-              <a class="footer-top__link" href="#">Terms & Condition</a>
-            </li>
-          </ul>
-        </div>
-        <div class="footer-top__item footer-top__nav">
-          <h6 class="footer-top__title">Account</h6>
-          <ul class="footer-top__list">
-            <li class="footer-top__item">
-              <a class="footer-top__link" href="#">Your Account</a>
-            </li>
-            <li class="footer-top__item">
-              <a class="footer-top__link" href="#">Checkout</a>
-            </li>
-            <li class="footer-top__item">
-              <a class="footer-top__link" href="#">Login</a>
-            </li>
-            <li class="footer-top__item">
-              <a class="footer-top__link" href="#">Register</a>
-            </li>
-          </ul>
-        </div>
-        <div class="footer-top__item footer-top__item-form">
-          <h6 class="footer-top__title">newsletter</h6>
-          <p class="footer-top__text">
-            Subscribe by our newsletter and get update protidin.
-          </p>
-          <form class="footer-top__form" action="#">
-            <input class="footer-top__form-input" type="text" placeholder="Email address" required>
-            <button class="footer-top__form-btn" type="submit">Subscribe</button>
-          </form>
-        </div>
+  <div class="content__container">
+    <div class="footer-top">
+      <div class="footer-top__item footer-top__contact">
+        <a class="logo footer-top__logo" href="#">
+          <div class="logo__img">Glee.</div>
+        </a>
+        <a class="footer-top__adress" href="#">
+          ADDRESS: 4772 Wines Lane Houston, TX 77032
+        </a>
+        <a class="footer-top__phone" href="tel:+8323475843">
+          TELEPHONE: +832-347-5843
+        </a>
+        <a class="footer-top__email" href="mailto:contact@Glee.com">
+          EMAIL: contact@Glee.com
+        </a>
       </div>
-      <div class="footer-bottom">
-        <p class="footer-bottom__copy">
-          ©2020 CopyRight Example. All rights reserved.
-        </p>
-        <ul class="footer-bottom__list">
-          <li class="footer-bottom__list-item">
-            <a class="footer-bottom__link" href="#">Home</a>
+      <div class="footer-top__item footer-top__nav">
+        <h6 class="footer-top__title">Services</h6>
+        <ul class="footer-top__list">
+          <li class="footer-top__item">
+            <a class="footer-top__link" href="#">About us</a>
           </li>
-          <li class="footer-bottom__list-item">
-            <a class="footer-bottom__link" href="#">About</a>
+          <li class="footer-top__item">
+            <a class="footer-top__link" href="#">Return Policy</a>
           </li>
-          <li class="footer-bottom__list-item">
-            <a class="footer-bottom__link" href="#">Blog</a>
+          <li class="footer-top__item">
+            <a class="footer-top__link" href="#">Our Blog</a>
           </li>
-          <li class="footer-bottom__list-item">
-            <a class="footer-bottom__link" href="#">Contact</a>
+          <li class="footer-top__item">
+            <a class="footer-top__link" href="#">Contact Us</a>
+          </li>
+          <li class="footer-top__item">
+            <a class="footer-top__link" href="#">Terms & Condition</a>
           </li>
         </ul>
       </div>
+      <div class="footer-top__item footer-top__nav">
+        <h6 class="footer-top__title">Account</h6>
+        <ul class="footer-top__list">
+          <li class="footer-top__item">
+            <a class="footer-top__link" href="#">Your Account</a>
+          </li>
+          <li class="footer-top__item">
+            <a class="footer-top__link" href="#">Checkout</a>
+          </li>
+          <li class="footer-top__item">
+            <a class="footer-top__link" href="#">Login</a>
+          </li>
+          <li class="footer-top__item">
+            <a class="footer-top__link" href="#">Register</a>
+          </li>
+        </ul>
+      </div>
+      <div class="footer-top__item footer-top__item-form">
+        <h6 class="footer-top__title">newsletter</h6>
+        <p class="footer-top__text">
+          Subscribe by our newsletter and get update protidin.
+        </p>
+        <form class="footer-top__form" action="#">
+          <input class="footer-top__form-input" type="text" placeholder="Email address" required>
+          <button class="footer-top__form-btn" type="submit">Subscribe</button>
+        </form>
+      </div>
     </div>
-  </footer>
-
+    <div class="footer-bottom">
+      <p class="footer-bottom__copy">
+        ©2020 CopyRight Example. All rights reserved.
+      </p>
+      <ul class="footer-bottom__list">
+        <li class="footer-bottom__list-item">
+          <a class="footer-bottom__link" href="#">Home</a>
+        </li>
+        <li class="footer-bottom__list-item">
+          <a class="footer-bottom__link" href="#">About</a>
+        </li>
+        <li class="footer-bottom__list-item">
+          <a class="footer-bottom__link" href="#">Blog</a>
+        </li>
+        <li class="footer-bottom__list-item">
+          <a class="footer-bottom__link" href="#">Contact</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</footer>
   <script src="js/main.min.js"></script>
 </body>
 

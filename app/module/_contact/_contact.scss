@@ -1,0 +1,134 @@
+.contact {
+  padding-top: 115px;
+  &__top {
+    text-align: center;
+    @extend %dmsans-700;
+  }
+  &__prevtitle {
+    line-height: 20px;
+    font-size: 16px;
+    color: $info;
+    margin-bottom: 10px;
+  }
+  &__title {
+    font-size: 35px;
+    line-height: 37px;
+    color: $login;
+    margin-bottom: 65px;
+  }
+  &__inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__item {
+    width: 370px;
+    // min-height: 380px;
+    background-color: #fbfbfb;
+    text-align: center;
+    border: 2px solid transparent;
+    transition: all 0.3s;
+    margin-bottom: 122px;
+    // cursor: pointer;
+    &:hover {
+      border: 2px solid $info;
+      .contact__img {
+        background-color: #a3bbc8;
+        path {
+          fill: #ffffff;
+        }
+      }
+    }
+  }
+  &__img {
+    display: block;
+    margin: 70px auto 60px;
+    width: 80px;
+    height: 80px;
+    background-color: #fff;
+    border-radius: 20px;
+    transition: all 0.3s;
+    svg {
+      transform: translateY(50%);
+    }
+  }
+  &__item-title {
+    display: block;
+    @extend %dmsans-700;
+    font-size: 20px;
+    line-height: 26px;
+    margin-bottom: 20px;
+    color: #222;
+  }
+  &__info {
+    display: block;
+    @extend %rubik-400;
+    color: #565872;
+    margin-bottom: 3px;
+    &:last-child {
+       margin-bottom: 65px;
+    }
+  }
+  &__content {
+    display: flex;
+    justify-content: space-between;
+  }
+  &__form {
+    max-width: 624px; 
+    width: 100%;
+    margin-right: 50px;
+  }
+  &__input-name,
+  &__input-mail {
+    @extend %rubik-400;
+    width: 300px;
+    margin-bottom: 25px;
+    padding: 12px 55px 12px 20px;
+    border: none;
+    background-color: #fafafa;
+    text-transform: uppercase;
+     &::placeholder {
+      color: #565872;
+    }
+  }
+  &__input-name {
+    margin-right: 20px;
+    background-image: url("../images/icons/contact-user.svg");
+    background-repeat: no-repeat;
+    background-position: 91% center;
+  }
+  &__input-mail {
+    background-image: url("../images/icons/contact-mail.svg");
+    background-repeat: no-repeat;
+    background-position: 91% center;
+  }
+  &__texarea {
+    @extend %rubik-400;
+    text-transform: uppercase;
+    border: none;
+    background-color: #fafafa;
+    max-width: 623px;
+    width: 100%;
+    padding: 10px 55px 10px 20px;
+    height: 175px;
+    resize: none;
+    background-image: url("../images/icons/contact-list.svg");
+    background-repeat: no-repeat;
+    background-position: 96% 10%;
+    margin-bottom: 23px;
+     &::placeholder {
+      color: #565872;
+    }
+  }
+  &__btn {
+    padding: 11px 40px;
+  }
+  &__title-new {
+    color: $login;
+  }
+}
+#map {
+  width: 526px;
+  height: 335px;
+}

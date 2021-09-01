@@ -1,0 +1,229 @@
+.blog-details {
+  &__text-top {
+    @extend %rubik-500;
+    margin-bottom: 25px;
+  }
+  .blockquote {
+    margin-bottom: 46px;
+    min-height: 130px;
+    background-color: $bg-page;
+    border-left: 6px solid $info;
+    padding: 22px 88px 22px 36px;
+    @extend %rubik-400;
+    &__author {
+      padding-top: 15px;
+      display: block;
+      position: relative;
+      padding-left: 42px;
+      &::before {
+        content: "";
+        position: absolute;
+        background-image: url("../images/icons/line.png");
+        width: 24px;
+        height: 3px;
+        left: 0;
+        top: 27px;
+      }
+    }
+  }
+  &__room {
+    display: flex;
+    margin-bottom: 42px;
+  }
+  &__link-img {
+    display: block;
+    width: 322px;
+    margin-right: 28px;
+  }
+  &__img {
+    min-width: 322px;
+    height: 210px;
+    object-fit: cover;
+  }
+  &__link-title {
+    color: inherit;
+  }
+  &__title {
+    font-size: 18px;
+    @extend %rubik-500;
+    margin-bottom: 22px;
+  }
+  &__text-box {
+    color: #565872;
+  }
+  &__text-bottom {
+    color: #565872;
+    margin-bottom: 64px;
+  }
+}
+
+.designer {
+  padding: 25px 0;
+  border-top: 2px solid #ebebeb;
+  border-bottom: 2px solid #ebebeb;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  &__info {
+    display: flex;
+    align-items: center;
+  }
+  &__info-link {
+    width: 76px;
+    display: block;
+    margin-right: 25px;
+  }
+  &__info-img {
+    min-width: 76px;
+    height: 76px;
+    object-fit: cover;
+  }
+  &__info-name {
+    color: #333333;
+  }
+  &__info-title {
+    font-size: 18px;
+    line-height: 24px;
+    @extend %rubik-500;
+    margin-bottom: 5px;
+  }
+  &__info-prof {
+    color: #666666;
+  }
+  &__socials-item {
+    display: flex;
+  }
+  &__socials-title {
+    line-height: 26px;
+    color: #333333;
+    margin-right: 25px;
+  }
+  &__socials-link {
+    color: #999999;
+    & + .designer__socials-link {
+      margin-left: 3px;
+    }
+  }
+  &__socials-items + .designer__socials-items {
+    margin-left: 24px;
+  }
+}
+
+.comment {
+  padding: 60px 0 120px;
+  &__title {
+    @extend %rubik-700;
+    font-size: 24px;
+    line-height: 36px;
+    color: $login;
+    margin-bottom: 55px;
+  }
+  &__content {
+    display: flex;
+    margin-bottom: 30px;
+    &:nth-child(3n) {
+      margin-left: 130px;
+    }
+  }
+  &__content-top {
+    padding-bottom: 30px;
+    border-bottom: 1px solid #e0e0e0;
+  }
+  &__user-img {
+    display: block;
+    min-width: 100px;
+    height: 100px;
+    object-fit: cover;
+    margin-right: 30px;
+  }
+
+  &__content-box__text {
+    display: flex;
+    justify-content: space-between;
+  }
+  &__content-name {
+    @extend %rubik-700;
+    color: $login;
+    margin-bottom: 20px;
+    line-height: 24px;
+  }
+  &__content-text {
+    color: #565872;
+    margin-bottom: 20px;
+  }
+  &__content-reply {
+    font-size: 14px;
+    color: #516278;
+    position: relative;
+    padding-right: 20px;
+    &::after {
+      content: "";
+      position: absolute;
+      right: 0;
+      top: 1px;
+      background-image: url("../images/icons/arrow-right-solid.svg");
+      background-size: cover;
+      width: 13px;
+      height: 14px;
+    }
+  }
+  .comment-form {
+    &__title {
+      @extend %rubik-700;
+      font-size: 24px;
+      color: $login;
+      margin-bottom: 45px;
+      padding-top: 58px;
+    }
+    &__box-input {
+      display: flex;
+      justify-content: space-between;
+    }
+    &__input-name,
+    &__input-mail {
+      max-width: 400px;
+      margin-bottom: 20px;
+      @extend %rubik-400;
+      line-height: 36px;
+      padding-right: 48px;
+    }
+
+
+    &__input-name {
+      border-color: #e5e5e5;
+      background-image: url("../images/comments/comment-user.svg");
+      background-repeat: no-repeat;
+      background-position: 96% center;
+    }
+    &__input-mail {
+      border-color: $info;
+      background-image: url("../images/comments/comment-convert.svg");
+      background-repeat: no-repeat;
+      background-position: 96% center;
+      &::placeholder {
+        color: #333333;
+      }
+    }
+    &__textarea {
+      padding-right: 60px;
+      height: 118px;
+      max-width: 833px;
+      width: 100%;
+      display: block;
+      resize: none;
+      margin-bottom: 36px;
+      padding: 15px 45px 15px 18px;
+      border-color: #e5e5e5;
+      background-image: url("../images/comments/comment-list.svg");
+      background-repeat: no-repeat;
+      background-position: 98% 20%;
+    }
+    &__btn {
+      font-size: 14px;
+      line-height: 21px;
+      padding: 14px 28px;
+      border-radius: 0;
+    }
+  }
+}
+

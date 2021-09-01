@@ -1,0 +1,56 @@
+.slider-top {
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding-top: 210px;
+  max-width: 1770px;
+  min-height: 822px;
+  background-color: #fcd7b6;
+  margin: 0 auto;
+  &__item {
+    display: flex !important;
+    justify-content: space-between;
+  }
+  &__title {
+    @extend %rubik-500;
+    max-width: 440px;
+    margin-bottom: 30px;
+    font-size: 72px;
+    line-height: 70px;
+    text-transform: uppercase;
+  }
+  &__text {
+    width: 374px;
+    @extend %rubik-400;
+    font-size: 18px;
+    color: $accent;
+    margin-bottom: 36px;
+  }
+  &__img {
+    padding-top: 42px;
+  }
+  .slick-dots {
+    display: flex;
+    justify-content: center;
+    @extend %rubik-500;
+    padding-top: 200px;
+    li {
+      button {
+        padding: 0;
+        border: none;
+        color: #667983;
+        width: 29px;
+        height: 29px;
+        border-radius: 50%;
+        margin: 0 5px;
+        font-size: 11px;
+        background-color: #fde3cc;
+      }
+      &.slick-active {
+        button {
+          color: $default;
+          background-color: #fff;
+        }
+      }
+    }
+  }
+}
