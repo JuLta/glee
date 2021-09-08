@@ -1,0 +1,52 @@
+
+.features {
+  background-color: $bg;
+  &__inner {
+    height: 170px;
+    display: flex;
+  }
+  &__items {
+    width: 590px;
+    height: 100%;
+    padding-left: 80px;
+    position: relative;
+    &::before {
+      content: "";
+      position: absolute;
+      width: 55px;
+      height: 55px;
+      left: 154px;
+      top: 56px;
+    }
+    &-support::before {
+      background-image: url(../images/icons/support.png);
+      background-repeat: no-repeat;
+    }
+    &-delivery::before {
+      background-image: url(../images/icons/delivery.png);
+      background-repeat: no-repeat;
+    }
+    &-credit::before {
+      background-image: url(../images/icons/Ellipse.png);
+      background-repeat: no-repeat;
+    }
+  }
+  &__items + .features__items {
+    border-left: 1px solid #e8e4df;
+  }
+  &__item {
+    width: 226px;
+    margin: 0 auto;
+    padding-top: 44px;
+  }
+  &__item-title {
+    @extend %dmsans-700;
+    font-size: 18px;
+    line-height: 40px;
+    color: #414141;
+  }
+  &__item-text {
+    @extend %dmsans-400;
+    color: $text;
+  }
+}

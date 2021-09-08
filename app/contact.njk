@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>start html</title>
+  <link rel="stylesheet" href="css/contact.min.css">
+</head>
+
+<body>
+
+  {% include 'app/module/_header/_header.html' %}
+
+  <main class="main">
+    {% include 'app/module/_tops/_tops.html' %}
+    {% include 'app/module/_contact/_contact.html' %}
+    {% include 'app/module/_news/_news.html' %}
+  </main>
+  
+  {% include 'app/module/_footer/_footer.html' %}
+  
+  <script src="https://maps.googleapis.com/maps/api/js?key=&callback=initMap&libraries=&v=weekly" async></script>
+
+  <script>
+    let map;
+
+    function initMap() {
+      map = new google.maps.Map(document.getElementById("map"), {
+        center: { lat: 29.865029431845194, lng: - 95.33183069740541 },
+        zoom: 10,
+        styles: [
+          {
+            "elementType": "geometry",
+            "stylers": [
+              {
+                "hue": "#ff4400"
+              },
+              {
+                "saturation": -68
+              },
+              {
+                "lightness": -4
+              },
+              {
+                "gamma": 0.72
+              }
+            ]
+          },
+          {
+            "featureType": "road",
+            "elementType": "labels.icon"
+          },
+          {
+            "featureType": "landscape.man_made",
+            "elementType": "geometry",
+            "stylers": [
+              {
+                "hue": "#0077ff"
+              },
+              {
+                "gamma": 3.1
+              }
+            ]
+          },
+          {
+            "featureType": "water",
+            "stylers": [
+              {
+                "hue": "#00ccff"
+              },
+              {
+                "gamma": 0.44
+              },
+              {
+                "saturation": -33
+              }
+            ]
+          },
+          {
+            "featureType": "poi.park",
+            "stylers": [
+              {
+                "hue": "#44ff00"
+              },
+              {
+                "saturation": -23
+              }
+            ]
+          },
+          {
+            "featureType": "water",
+            "elementType": "labels.text.fill",
+            "stylers": [
+              {
+                "hue": "#007fff"
+              },
+              {
+                "gamma": 0.77
+              },
+              {
+                "saturation": 65
+              },
+              {
+                "lightness": 99
+              }
+            ]
+          },
+          {
+            "featureType": "water",
+            "elementType": "labels.text.stroke",
+            "stylers": [
+              {
+                "gamma": 0.11
+              },
+              {
+                "weight": 5.6
+              },
+              {
+                "saturation": 99
+              },
+              {
+                "hue": "#0091ff"
+              },
+              {
+                "lightness": -86
+              }
+            ]
+          },
+          {
+            "featureType": "transit.line",
+            "elementType": "geometry",
+            "stylers": [
+              {
+                "lightness": -48
+              },
+              {
+                "hue": "#ff5e00"
+              },
+              {
+                "gamma": 1.2
+              },
+              {
+                "saturation": -23
+              }
+            ]
+          },
+          {
+            "featureType": "transit",
+            "elementType": "labels.text.stroke",
+            "stylers": [
+              {
+                "saturation": -64
+              },
+              {
+                "hue": "#ff9100"
+              },
+              {
+                "lightness": 16
+              },
+              {
+                "gamma": 0.47
+              },
+              {
+                "weight": 2.7
+              }
+            ]
+          }
+        ]
+      });
+    }
+  </script>
+
+  <script src="js/main.min.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,74 @@
+.filter {
+  &__item {
+    width: 270px;
+    margin-bottom: 50px;
+  }
+  &__title {
+    @extend %dmsans-700;
+    font-size: 18px;
+    position: relative;
+    padding-right: 50px;
+    display: inline-flex;
+    margin-bottom: 24px;
+    text-transform: uppercase;
+    &::after {
+      content: "";
+      position: absolute;
+      background-image: url("../images/icons/line.png");
+      width: 39px;
+      height: 3px;
+      right: 0;
+      top: 44%;
+    }
+  }
+}
+
+.label {
+  background-color: transparent;
+  cursor: pointer;
+  @extend %rubik-400;
+  font-size: 16px;
+  display: block;
+}
+
+.irs--flat .irs-bar {
+  top: 5px;
+  height: 4px;
+  background-color: $info;
+}
+.irs--flat .irs-line {
+  top: 6px;
+  height: 2px;
+  background-color: #c2d2db;
+  border-radius: 0;
+}
+.irs--flat .irs-min,
+.irs--flat .irs-max {
+  display: none;
+}
+.irs--flat .irs-handle > i:first-child {
+  display: none;
+}
+.irs--flat .irs-handle {
+  top: 0px;
+  width: 16px;
+  height: 14px;
+  background-color: $info;
+}
+
+.irs--flat .irs-from,
+.irs--flat .irs-to,
+.irs--flat .irs-single {
+  display: none;
+}
+
+.irs--flat {
+  height: 21px;
+}
+.filter-price__fromto {
+  display: flex;
+  justify-content: space-between;
+  font-size: 14px;
+  line-height: 43px;
+  @extend %rubik-400;
+}

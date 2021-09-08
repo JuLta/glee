@@ -1,0 +1,16 @@
+.top {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: top center;
+  color: $top-title;
+  text-align: center;
+  height: 125px;
+  display: flex;
+  align-items: center;
+  &__title {
+    @extend %rubik-300;
+    font-size: 36px;
+    line-height: 24px;
+    margin-bottom: 15px;
+  }
+}

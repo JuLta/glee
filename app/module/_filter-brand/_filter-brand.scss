@@ -1,0 +1,46 @@
+.filter {
+  &__item {
+    width: 270px;
+    margin-bottom: 50px;
+  }
+  &__title {
+    @extend %dmsans-700;
+    font-size: 18px;
+    position: relative;
+    padding-right: 50px;
+    display: inline-flex;
+    margin-bottom: 24px;
+    text-transform: uppercase;
+    &::after {
+      content: "";
+      position: absolute;
+      background-image: url("../images/icons/line.png");
+      width: 39px;
+      height: 3px;
+      right: 0;
+      top: 44%;
+    }
+  }
+}
+.label {
+  background-color: transparent;
+  cursor: pointer;
+  @extend %rubik-400;
+  font-size: 16px;
+  display: block;
+}
+.filter-brand {
+  &__input {
+    @extend %checkbox-hidden;
+    &:checked + .filter-brand__checkbox {
+      background-color: $bg-page;
+      border-radius: 5px;
+    }
+  }
+  &__checkbox {
+    background-color: transparent;
+    padding: 5px 23px 5px 14px;
+    display: flex;
+    justify-content: space-between;
+  }
+}

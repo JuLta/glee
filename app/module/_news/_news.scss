@@ -1,0 +1,104 @@
+.news {
+  padding-top: 115px;
+  background-repeat: no-repeat;
+  background-position: bottom;
+
+  .news-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 40px;
+    &__title {
+      margin: 0;
+    }
+    &__link-btn {
+      @extend %dmsans-700;
+      color: #262626;
+      font-size: 16px;
+      padding-right: 26px;
+      position: relative;
+      &::after {
+        content: "";
+        position: absolute;
+        height: 11px;
+        width: 6px;
+        background-image: url("../images/icons/right-btn.svg");
+        right: 0;
+        top: 30%;
+      }
+    }
+    &__block {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      grid-column-gap: 40px;
+    }
+    &__items-img {
+      object-fit: cover;
+    }
+    &__items {
+      min-height: 420px;
+      max-width: 370px;
+      box-shadow: 0px 6px 47px 3px rgba(37, 37, 37, 0.05);
+      border-radius: 5px;
+      background-color: #fff;
+      position: relative;
+    }
+    &__link-box {
+      position: absolute;
+      padding: 0 31px;
+      background-color: $info;
+      top: 56%;
+      left: 30px;
+      border-radius: 21px;
+    }
+    &__box-btn {
+      @extend %dmsans-700;
+      color: #fff;
+      font-size: 14px;
+      line-height: 20px;
+      text-transform: uppercase;
+    }
+    &__block-text {
+      padding: 32px 0 0 28px;
+      max-width: 343px;
+    }
+    &__block-title {
+      min-height: 80px;
+      @extend %dmsans-500;
+      font-size: 18px;
+      line-height: 22px;
+      color: #262626;
+      padding: 0 3px 0;
+      border-bottom: 1px solid #e0e0e0;
+      margin-bottom: 10px;
+    }
+    &__text + .news-top__text {
+      margin-left: 26px;
+    }
+    &__text-link,
+    &__text {
+      padding-left: 3px;
+      font-size: 12px;
+      line-height: 30px;
+      @extend %dmsans-400;
+      color: #222933;
+      text-transform: uppercase;
+    }
+  }
+  .partners {
+    &__inner {
+      height: 265px;
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+    }
+  }
+}
+
+.new-top__title {
+  color: $default;
+  margin: 0;
+}
+.news-top__link-btn__def {
+  color: $default !important;
+}
