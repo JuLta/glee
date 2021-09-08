@@ -1,4 +1,12 @@
 $ (function(){
+  $('.user-nav__link-list').on('click', function () {
+    $('.menu__list').toggleClass('menu__list--active')
+  });
+
+  $('.footer-top__title-js').on('click', function () {
+    $(this).siblings().slideToggle();
+    $(this).toggleClass('footer-top__item--active')
+  });
 
   $('.review-tabs__top-item').on('click', function(e) {
     e.preventDefault();
