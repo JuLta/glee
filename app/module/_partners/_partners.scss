@@ -6,3 +6,34 @@
     align-items: center;
   }
 }
+
+@media (max-width: 790px) {
+  .partners {
+    &__inner {
+     flex-wrap: wrap;
+    }
+    img {
+      margin: 0 15px;
+    }
+  }
+}
+
+@media (max-width: 530px) {
+  .partners {
+    &__inner{
+      height: 200px;
+    }
+    margin-bottom: -30px;
+    img {
+     width: 20%;
+    }
+  }
+}
+
+@media (max-width: 400px) {
+  .partners {
+    &__inner{
+      height: 170px;
+    }
+  }
+}

@@ -12,10 +12,38 @@
     color: $top-title;
     font-size: 42px;
     margin-bottom: 22px;
+    line-height: 42px;
   }
   &__text {
     margin-bottom: 45px;
     font-size: 18px;
     @extend %rubik-400;
+  }
+}
+
+@media (max-width: 1024px) {
+  .page-404 {
+    &__inner {
+      max-width: 452px;
+    }
+  }
+}
+
+@media (max-width: 790px) {
+  .page-404 {
+    background-image: none !important;
+    background-color: $bg-page;
+    &__inner {
+      max-width: 600px;
+      padding: 150px 40px;
+    }
+  }
+}
+
+@media (max-width: 583px) {
+  .page-404 {
+    &__inner {
+      padding: 100px 30px;
+    }
   }
 }

@@ -64,3 +64,10 @@
     margin-bottom: 25px;
   }
 }
+
+@media (max-width: 583px) {
+  .modal {
+    margin-bottom: 90px;
+    padding-top: 90px;
+  }
+}
