@@ -108,7 +108,7 @@ body {
     border-radius: 5px;
     cursor: pointer;
   }
-   .slider-top__link-btn {
+  .slider-top__link-btn {
     color: #fff;
     padding: 18px 96px 18px 24px;
     background-color: #a3bbc8;
@@ -116,6 +116,7 @@ body {
     @extend %rubik-500;
     font-size: 15px;
     line-height: 12px;
+    display: inline-block;
     &::after {
       content: "";
       position: absolute;
@@ -123,7 +124,7 @@ body {
       background-repeat: no-repeat;
       width: 22px;
       height: 9px;
-      top: 25px;
+      top: 20px;
       right: 15px;
     }
   }

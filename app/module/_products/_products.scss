@@ -108,6 +108,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-wrap: wrap;
   }
   &__item {
     width: 600px;
@@ -130,6 +131,7 @@
       background-image: url(../images/products-catalog/bra-led.png);
       background-repeat: no-repeat;
       top: -190px;
+      left: -15px;
     }
   }
   &__item-title {
@@ -162,6 +164,75 @@
       height: 9px;
       top: 25px;
       right: 15px;
+    }
+  }
+}
+
+
+@media (max-width: 1300px) {
+  .more {
+    display: block;
+    padding-top: 100px;
+    &__item-inner {
+      margin-top: 130px;
+    }
+  }
+}
+
+@media (max-width: 1200px) {
+  .products__content {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .products__content-item-links__box { 
+    margin: 0 auto;
+  }
+}
+
+@media (max-width: 920px) {
+  .products__content {
+   grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 583px) {
+  .products__content {
+    grid-template-columns: repeat(1, 1fr);
+    margin: 0 auto;
+  }
+}
+
+@media (max-width: 790px) {
+  .more {
+     display: block;
+     padding-top: 100px;
+      &__item-inner {
+        margin-top: 130px;
+    }
+    &__item {
+    padding: 0 15px;
+      &::before {
+        display: none;
+      }
+    }
+    &__item-inner {
+      margin-top: 30px;
+    }
+  }
+}
+
+@media (max-width: 400px) { 
+  .products {
+    &__filter-btn {
+      flex-wrap: wrap;
+    }
+    &__btn {
+      margin-bottom: 6px;
+    }
+  }
+  .more {
+    &__item-text {
+      font-size: 14px;
     }
   }
 }
