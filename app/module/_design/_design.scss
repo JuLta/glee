@@ -36,7 +36,7 @@
   &__item-link {
     background-repeat: no-repeat;
     background-size: cover;
-    background-position: center center;
+    background-position: right center;
     height: 250px;
   }
   &__item {
@@ -49,5 +49,47 @@
   }
   &__item-subtitle {
     color: $info;
+  }
+}
+
+@media (max-width: 1200px) {
+  .content{
+     &__item {
+    padding: 10px;
+    }
+  }
+}
+
+@media (max-width: 1024px) {
+  .content{
+     &__items {
+        grid-template-columns: repeat(2, 1fr);
+      }
+      &__item {
+      padding: 7px;
+      padding-top: 3px;
+    }
+  }
+}
+
+@media (max-width: 790px) {
+   .content{
+     &__items {
+        grid-template-columns: repeat(2, 1fr);
+    }
+  }
+}
+
+@media (max-width: 583px) {
+  .content{
+    &__item-link {
+     background-position: center center;
+    }
+    &__items {
+        grid-template-columns: repeat(1, 1fr);
+    }
+  }
+  .design__btn {
+    margin-bottom: 6px;
   }
 }
