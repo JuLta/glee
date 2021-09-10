@@ -7,6 +7,17 @@ $ (function(){
     $('.shop__filters').slideToggle();
   });
 
+  // $('.shop-content__links--active').on('click', function (e) {
+  //   e.preventDefault();
+  //   $('.shop__add-cart').toggle(function () {
+  //     $("#slide").hide("slide", { direction: "left" }, 1000);
+  //     },
+  //       function () {
+  //       $("#slide").show("slide", { direction: "left" }, 500);
+  //     } 
+  //   );
+  // });
+
   $('.footer-top__title-js').on('click', function () {
     $(this).siblings().slideToggle();
     $(this).toggleClass('footer-top__item--active')

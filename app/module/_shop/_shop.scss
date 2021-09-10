@@ -9,6 +9,14 @@
   &__filter-btn {
     display: none;
   }
+  &__add-cart {
+    position: absolute;
+    display: none;
+    width: 118px;
+    height: 50px;
+    border: none;
+    // @extend %btn;
+  }
 }
 
 .filter {
@@ -238,12 +246,14 @@
 @media (max-width: 1200px) {
   .shop {
     padding: 80px 0 23px;
-    .filter-recent {
-     order: 0;
-    }
     &__filters {
-    margin-right: 0;
     display: none;
+    position: absolute;
+    z-index: 100;
+    background-color: #fff;
+    width: 100%;
+    left: 0;
+    top: 20px;
     }
     &__filter-btn {
       display: block;
@@ -255,13 +265,16 @@
       padding-top: 12px;
       position: fixed;
       right: 15px;
-      z-index: 5;
+      z-index: 101;
       top: 350px;
       path {
         fill: #243f4d;
       }
     }
+  .filter__item {
+    padding: 0 15px;
   }
+ }
 }
 
 @media (max-width: 900px) {

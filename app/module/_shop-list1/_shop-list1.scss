@@ -111,6 +111,11 @@
     }
     .filters {
       display: none;
+      position: absolute;
+      z-index: 100;
+      background-color: #fff;
+      float: left;
+      top: 20px;
     }
     &__filter-btn {
       display: block;
@@ -122,7 +127,7 @@
       padding-top: 12px;
       position: fixed;
       right: 15px;
-      z-index: 5;
+      z-index: 101;
       top: 350px;
       path {
         fill: #243f4d;
