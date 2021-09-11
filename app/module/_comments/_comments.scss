@@ -33,6 +33,7 @@
   }
   &__content-star {
     margin-left: auto;
+    margin-top: 6px;
   }
   &__content-text {
     margin-bottom: 10px;
@@ -112,6 +113,44 @@
     &:hover {
       background-color: $info;
       color: #fff;
+    }
+  }
+}
+
+@media (max-width: 790px) {
+  .comments-form {
+    &__text-input {
+    width: 100%;
+    }
+    &__text-input:first-child{
+     margin-bottom: 20px;
+    }
+    &__box-input {
+      display: block;
+    }
+    &__rating-title {
+      margin-bottom: 20px;
+      margin-right: 0;
+    }
+    &__label {
+      margin-right: 0;
+      display: block;
+    }
+  }
+}
+
+@media (max-width: 530px) {
+  .comments {
+    &__content-date {
+      display: none;
+    }
+  }
+}
+
+@media (max-width: 530px) {
+  .comments {
+    img {
+      display: none;
     }
   }
 }
