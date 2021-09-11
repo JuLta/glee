@@ -6,6 +6,17 @@
   &__filters {
     margin-right: 30px;
   }
+  &__filter-btn {
+    display: none;
+  }
+  &__add-cart {
+    position: absolute;
+    display: none;
+    width: 118px;
+    height: 50px;
+    border: none;
+    // @extend %btn;
+  }
 }
 
 .filter {
@@ -180,7 +191,7 @@
   }
   &__info-title {
     font-size: 40px;
-    line-height: 26px;
+    line-height: 36px;
     color: #333333;
     @extend %rubik-400;
   }
@@ -228,6 +239,103 @@
       background-color: $info;
       color: #fff;
       cursor: default;
+    }
+  }
+}
+
+@media (max-width: 1200px) {
+  .shop {
+    padding: 80px 0 23px;
+    &__filters {
+    display: none;
+    position: absolute;
+    z-index: 100;
+    background-color: #fff;
+    width: 100%;
+    left: 0;
+    top: 20px;
+    }
+    &__filter-btn {
+      display: block;
+      width: 50px;
+      height: 50px;
+      border: none;
+      background-color: $bg-page;
+      padding: 0;
+      padding-top: 12px;
+      position: fixed;
+      right: 15px;
+      z-index: 101;
+      top: 350px;
+      path {
+        fill: #243f4d;
+      }
+    }
+  .filter__item {
+    padding: 0 15px;
+  }
+ }
+}
+
+@media (max-width: 900px) {
+  .shop-content{
+    &__inner {
+      grid-template-columns: repeat(2, 1fr);
+        grid-gap: 25px 30px;
+      }
+    .products__content-img {
+      max-width: 83%;
+    }
+  }
+}
+
+@media (max-width: 790px) {
+  .shop-content{
+    padding-bottom: 68px;
+    &__inner {
+        grid-gap: 25px 30px;
+      }
+    &__item-inner {
+      display: block;
+    }
+    &__img-inner {
+      width: 100%;
+    }
+    &__info-items {
+      margin: 0;
+      max-width: 100%;
+      padding: 55px 0 0 15px;
+      height: 450px;
+    }
+    &__text {
+      max-width: 100%;
+    }
+    .pagination2 {
+      padding-left: 15px;
+      .pagination__inner {
+        padding-top: 46px;
+      }
+    }
+  }
+}
+
+@media (max-width: 583px) {
+  .shop-content{
+    padding-top: 30px;
+    &__inner {
+      grid-template-columns: repeat(1, 1fr);
+        grid-gap: 25px 30px;
+      }
+    .products__content-img {
+      max-width: 100%;
+    }
+  }
+}
+
+@media (max-width: 400px) {
+  .shop-content{
+    &__img {
+      max-width: 88%;
     }
   }
 }

@@ -6,6 +6,9 @@
   &__filters {
     margin-right: 30px;
   }
+  &__filter-btn {
+    display: none;
+  }
 }
 .shop-content {
   width: 100%;
@@ -44,7 +47,7 @@
   }
   &__info-title {
     font-size: 40px;
-    line-height: 26px;
+    line-height: 36px;
     color: #333333;
     @extend %rubik-400;
   }
@@ -95,3 +98,42 @@
     }
   }
 }
+
+@media (max-width: 1200px) {
+  .shop {
+    .shop__inner {
+      display: block;
+    } 
+    .filter {
+      &__item {
+      width: 100%;
+     }
+    }
+    .filters {
+      display: none;
+      position: absolute;
+      z-index: 100;
+      background-color: #fff;
+      float: left;
+      top: 20px;
+    }
+    &__filter-btn {
+      display: block;
+      width: 50px;
+      height: 50px;
+      border: none;
+      background-color: $bg-page;
+      padding: 0;
+      padding-top: 12px;
+      position: fixed;
+      right: 15px;
+      z-index: 101;
+      top: 350px;
+      path {
+        fill: #243f4d;
+        }
+      }
+  }
+}
+
+    

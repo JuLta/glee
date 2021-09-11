@@ -3,6 +3,21 @@ $ (function(){
     $('.menu__list').toggleClass('menu__list--active')
   });
 
+  $('.shop__filter-btn').on('click', function () {
+    $('.shop__filters').slideToggle();
+  });
+
+  // $('.shop-content__links--active').on('click', function (e) {
+  //   e.preventDefault();
+  //   $('.shop__add-cart').toggle(function () {
+  //     $("#slide").hide("slide", { direction: "left" }, 1000);
+  //     },
+  //       function () {
+  //       $("#slide").show("slide", { direction: "left" }, 500);
+  //     } 
+  //   );
+  // });
+
   $('.footer-top__title-js').on('click', function () {
     $(this).siblings().slideToggle();
     $(this).toggleClass('footer-top__item--active')
@@ -21,6 +36,29 @@ $ (function(){
     slidesToShow: 4,
     slidesToScroll: 4,
     infinite: false,
+    responsive: [
+      {
+        breakpoint: 1024,
+        settings: {
+          slidesToShow: 3,
+          slidesToScroll: 3,
+        }
+      },
+      {
+        breakpoint: 790,
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 2,
+        }
+      },
+      {
+        breakpoint: 530,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+        }
+      },
+    ]
   }); 
 
   $('.detalis-slide__thumb').slick({
@@ -36,6 +74,14 @@ $ (function(){
     draggable: false,
     arrows: false,
     fade: true,
+    responsie: [
+      {
+        breakpoint: 1200,
+        settings: {
+          draggable: true,
+        }
+      },
+    ]
   });
 
   $(".star").rateYo({
